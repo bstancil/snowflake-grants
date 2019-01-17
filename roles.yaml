@@ -1,0 +1,28 @@
+-   name: role_foo
+    description: This role does foo things
+    parent_role: foo_parent
+    warehouses: 
+        - wh_1
+    read_from:
+        - database_1.*
+        - database_2.schema_1
+        - database_2.schema_2
+    create_in:
+    owner_of:
+
+-   name: foo_parent
+    description: The parent of foo
+    parent_role: sysadmin
+    warehouses:
+        - wh_1
+        - wh_2
+    read_from:
+        - database_1.*
+        - database_2.*
+        - database_3.*
+    create_in:
+        - database_1.*
+        - database_2.schema_1
+    owner_of:
+        - database_1.schema_1
+        - database_1.schema_2

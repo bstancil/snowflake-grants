@@ -1,0 +1,12 @@
+.DS_store
+
+config.yaml
+.ipynb_checkpoints
+
+*.pyc
+*.jar
+*.zip
+*.deb
+*.rpm
+*.tar.gz
+*.tgz

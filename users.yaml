@@ -1,0 +1,28 @@
+- name: user_1
+  properties:
+    display_name: User 1
+    first_name: User
+    last_name: One
+    email: first@company.com
+    disable_mfa: FALSE
+    comment: The best person
+    default_warehouse: wh_1
+    default_namespace: database_1
+    default_role: role_foo
+  roles:
+    - role_foo
+
+- name: user_2
+  properties:
+    display_name: User 2
+    first_name: User
+    last_name: Two
+    email: second@company.com
+    disable_mfa: TRUE
+    comment: The worst person
+    default_warehouse: wh_1
+    default_namespace: database_1
+    default_role: role_foo_parent
+  roles:
+    - role_foo
+    - role_foo_parent
